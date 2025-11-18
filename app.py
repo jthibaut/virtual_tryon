@@ -6,7 +6,7 @@ import os
 st.title("Virtual Try-On")
 
 uploaded_file = st.file_uploader("Télécharge ta photo", type=["png", "jpg", "jpeg"])
-product_choice = st.selectbox("Choisis un vêtement", products)
+product_choice = st.selectbox("Choisis un vêtement", PRODUCTS)
 
 if uploaded_file:
     user_img = Image.open(uploaded_file)
