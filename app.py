@@ -9,7 +9,7 @@ st.write("Téléversez une photo de vous, puis sélectionnez un vêtement à sup
 uploaded = st.file_uploader("Votre photo", type=["jpg","jpeg","png"])
 
 # Liste des produits disponibles
-product_dir = "products"
+product_dir = "PRODUCTS"
 products = [f for f in os.listdir(product_dir) if f.lower().endswith(('.png','.jpg','.jpeg'))]
 
 selected = st.selectbox("Choisissez un produit", ["Aucun"] + products)
